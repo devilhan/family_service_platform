@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: root才
+    password: 654321
+    url: jdbc:mysql://localhost:3306/family_service_platform?userSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:com/devil/han/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.devil.han.mapper: trace
